@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffb4d2;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.carousel .carousel-item {
+  height: 680px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+}
+
+.title{
+  margin: 20px;
+  color: #fff;
+  background-color: #ffb4d2;
+}
+.btn.btn-primary{
+  background-color: #ffb4d2;
+  border-color: #ffb4d2;
+}
+.btn-primary:hover {
+  background-color: #fff !important;
+  color:#ffb4d2 !important;
+  border-color: #ffb4d2 !important;
+}
+.box{
+  margin: 10px;
+  background-color: #ffb4d2;
+}
+.nav-link:hover {
+  color: #ffb4d2 !important;
+}
+.nav-brand:hover{
+  color: #ffb4d2 !important;
+}
+
+.image { 
+  position: relative; 
+  width: 100%; /* for IE 6 */
+}
+.titleimg { 
+  position: absolute; 
+  top: 200px; 
+  left: 0; 
+  width: 100%; 
+  color: #fff;
+  font-family:Futura,Helvetica,Arial,sans-serif;
+
+}
+.otherCard{
+  margin:15px;
+  padding: 10px;
+}
+.cardHome{
+  margin: 5px;
+}
+.h1{
+  font-family:Futura,Helvetica,Arial,sans-serif;
+}

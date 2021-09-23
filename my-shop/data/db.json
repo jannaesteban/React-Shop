@@ -1,0 +1,260 @@
+{
+  "home": [
+    {
+      "id": 1,
+      "img": "https://kyliecosmetics.com/en-us/kylie-skin/shop-all/bundles-sets.thumb.800.400.png",
+      "desc": " Self-care or gifts for any occasion, you can't go wrong with these!",
+      "name": "BUNDLES AND SETS",
+      "link": "http://localhost:3000/bundles-sets"
+    },
+    {
+      "id": 2,
+      "img": "https://kyliecosmetics.com/en-us/kylie-skin/shop-all/cleansers-removers.thumb.800.400.png",
+      "desc": "Wash away dirt, oil and makeup. The first step in your daily skincare routine.",
+      "name": "CLEANSERS",
+      "link": "http://localhost:3000/cleansers"
+    },
+    {
+      "id": 3,
+      "img": "https://kyliecosmetics.com/en-us/kylie-skin/shop-all/moisturizers.thumb.800.400.png",
+      "desc": "Replenish your skin's moisture: an essential step in your skincare routine.",
+      "name": "MOISTURIZERS",
+      "link": "http://localhost:3000/moisturizers"
+    },
+    {
+      "id": 4,
+      "img": "https://kyliecosmetics.com/en-us/kylie-skin/shop-all/serums-treatments.thumb.800.400.png",
+      "desc": "Targeted solutions for all of your skin needs.",
+      "name": "SERUMS",
+      "link": "http://localhost:3000/serums"
+    }
+  ],
+  "bundles-sets": [
+      {
+        "id": 1,
+        "img": "https://coty.scene7.com/is/image/cotyemea/Kylie-Skin-Core?$SQUARE-575x575-2X$",
+        "desc": "The complete Kylie Skin set, your daily skincare routine recommended by Kylie Jenner. Save $15 when you buy the set (value at $140). Set includes (all full sizes): Foaming Face Wash (5 fl oz / 149 ml), Walnut Face Scrub (3 oz / 85 g), Vanilla Milk Toner (8 fl oz / 236 ml), Vitamin C Serum ( 0.7 fl oz / 20 ml), Face Moisturizer ( 1.75 fl oz / 52 ml), Eye Cream (0. 57 fl oz / 17 ml)",
+        "name": "KYLIE SKIN SET",
+        "price": "CHF 125"
+      },
+      {
+        "id": 2,
+        "img": "https://coty.scene7.com/is/image/cotyemea/4%20Piece%20Mini?$SQUARE-575x575-2X$",
+        "desc": "The 4-Piece Kylie Skin mini set contains the perfect on-the-go essentials. Set Includes: Foaming Face Wash (1 fl oz / 30 ml), Face Moisturizer (0.5 fl oz / 15 ml), Vitamin C Serum (0.3 fl oz / 10 ml), Vanilla Milk Toner (1 fl oz / 30 ml)",
+        "name": "4-PIECE MINI SET",
+        "price": "CHF 39"
+      },
+      {
+        "id": 3,
+        "img": "https://cdn.shopify.com/s/files/1/0066/8719/5183/products/KS_Prep-Those-Pores_Ecomm_01_df4699ee-404a-4cef-8e18-582d7c6e3f9f.jpg?v=1630430044",
+        "desc": "My Prep Those Pores Bundle contains four of my Kylie Skin must-haves to leave your skin cleansed, purified and virtually pore-free. Each bundle includes my Foaming Face Wash, Detox Face Mask, Face Mask Brush and Vanilla Milk Toner. Get your skin prepped for all your Kylie Cosmetics makeup favorites.",
+        "name": "PREP THOSE PORES BUNDLE",
+        "price": "CHF 70"
+      },
+      {
+        "id": 4,
+        "img": "https://cdn.shopify.com/s/files/1/0066/8719/5183/products/KS_Good-Night-Skin_US_Ecomm_01.jpg?v=1630427098",        
+        "desc": "My Good Night Skin Bundle is your evening cleansing routine for fresh, clean and hydrated skin. This nighttime collection contains three of my must-haves to effortlessly cleanse and moisturize your skin: my Makeup Melting Cleanser, Face Moisturizer, and my Kylie Skin Headband. Turn your cleansing routine into a deeply enjoyable experience you’ll look forward to every night!",
+        "name": "GOOD NIGHT SKIN BUNDLE",
+        "price": "CHF 55"
+      },
+      {
+        "id": 5,
+        "img": "https://coty.scene7.com/is/image/cotyemea/KS_Wake-Up-My-Eyes_Ecomm-Pink_01?$SQUARE-575x575-2X$",
+        "desc": "My Wake Up My Eyes Bundle is your daily essential eye routine handpicked by me. This morning collection contains three of my must-haves for leaving the eye area and skin hydrated and radiant: my Face Moisturizer, Eye Cream and Kyliner Brush Tip Liquid Eyeliner Pen.",
+        "name": "WAKE UP MY EYES BUNDLE",
+        "price": "CHF 60"
+      },
+      {
+        "id": 6,
+        "img": "https://coty.scene7.com/is/image/cotyemea/KS_CBW_21_Open_WS_01?$SQUARE-575x575-2X$",
+        "desc": "My exclusive Kylie Skin Coconut Body Wash will transform your bath or shower time into a relaxing tropical fragrant experience. Formulated with mild surfactants, the pampering gel texture of my Coconut Body Wash creates a dense and creamy lather to gently and effectively cleanse, leaving your skin silky-smooth and scented with a sweet and exotic coconut scent.",
+        "name": "COCONUT BODY WASH",
+        "price": "CHF 26"
+      },
+      {
+        "id": 7,
+        "img": "https://coty.scene7.com/is/image/cotyemea/BODY-SCRUB-WS?$SQUARE-575x575-2X$",
+        "desc": "Our Coconut Sugar Scrub is a recipe of lush nutrients that delivers gentle exfoliation and hydration. Formulated with Sugar Cane and Glycerin, this soft exfoliating formula leaves your skin polished, looking smooth, revived and glowing.",
+        "name": "COCONUT BODY SCRUB",
+        "price": "CHF 28"
+      },
+      {
+        "id": 8,
+        "img": "https://coty.scene7.com/is/image/cotyemea/KS_RBL_21_Closed_WS_01?$SQUARE-575x575-2X$",
+        "desc": "My exclusive Kylie Skin Rose Body Lotion will scent your skin with the softly fragrant aroma of fresh roses. Formulated with a blend of nurturing ingredients, Coconut Oil, Shea Butter and Jojoba Seed Oil, the indulgent texture of my Rose Body Lotion helps smooth and moisturize your skin to leave it looking healthy and youthful, and feeling satiny soft. A body-loving lotion to leave skin feeling nourished immediately and over time.",
+        "name": "ROSE BODY LOTION",
+        "price": "CHF 28"
+      },
+      {
+        "id": 9,
+        "img": "https://coty.scene7.com/is/image/cotyemea/Facemask%20and%20Brush?$SQUARE-575x575-2X$",
+        "desc": "Treat your skin to a detox with this cleansing facial mask, plus our Face Mask Brush makes masking easy and mess-free!",
+        "name": "DETOX FACE MASK & BRUSH",
+        "price": "CHF 40"
+      }
+    ],
+    "cleansers": [
+    {
+      "id": 1,
+      "img": "https://coty.scene7.com/is/image/cotyemea/MicrosoftTeams-image_2?$SQUARE-575x575-2X$",
+      "desc": "Our pampering Foaming Face Wash gently cleanses without stripping skin's natural moisture. Formulated with Glycerin and Coconut-based Surfactants, this indulging foam helps remove dirt, oil and makeup for a fresh, bright complexion.",
+      "name": "FOAMING FACE WASH",
+      "price": "CHF 30"
+    },
+      {
+        "id": 2,
+        "img": "https://coty.scene7.com/is/image/cotyemea/KS_COTPAD_21_Open_WS_01?$SQUARE-575x575-2X$",
+        "desc": "My Reusable Cloth Pads can be used to remove makeup, impurities and dirt. They are perfect for applying your favorite liquid skincare products, including my Vanilla Milk Toner, or removing my Detox Face Mask. These durable cloth pads are super soft and gentle on the skin. Available in a pack of three sustainable pads made from recycled bottles complete with a wash bag for easy washing. Hand wash them daily with water and soap, or throw them in the laundry in the included laundry bag (which doubles up as a travel bag!) when you’re ready to wash! Each pad can be used for up to 1000 washes.",
+        "name": "REUSABLE CLOTH PADS",
+        "price": "CHF 30"
+      },
+      {
+        "id": 3,
+        "img": "https://coty.scene7.com/is/image/cotyemea/Double%20Cleanse?$SQUARE-575x575-2X$",
+        "desc": "The perfect cleansing routine. Start with our transformative Makeup Melting Cleanser as a pre-cleanse to melt your makeup, then follow with our Foaming Face Wash to remove remaining impurities and dirt for a fresh cleansed complexion.",
+        "name": "DOUBLE CLEANSE BUNDLE",
+        "price": "CHF 55"
+      },
+      {
+        "id": 4,
+        "img": "https://coty.scene7.com/is/image/cotyemea/KS_Makeup-Melting-Cleanser_Ecomm-Pink_03?$SQUARE-575x575-2X$",
+        "desc": "This lightweight cream-to-oil Makeup Melting Cleanser gently helps melt your makeup and impurities. Cleansed, nourished and soothed, your skin looks radiant after each use. This multi-tasking cleanser will be your new favorite to get rid of daily makeup, while eliminating skin residue without drying. This cream-to-oil balm texture is ideal for daily makeup removal and includes a blend of skin-loving botanical oils that provide a refreshing aroma during your cleanse.",
+        "name": "MAKEUP MELTING CLEANSER",
+        "price": "CHF 25"
+      },
+      {
+        "id": 5,
+        "img": "https://coty.scene7.com/is/image/cotyemea/makeup-wipes-2?$SQUARE-575x575-2X$",
+        "desc": "Our cleansing towelettes remove dirt, oil and makeup, leaving your skin feeling fresh and looking clean.",
+        "name": "MAKEUP REMOVING WIPES",
+        "price": "CHF 15"
+      },
+      {
+        "id": 6,
+        "img": "https://coty.scene7.com/is/image/cotyemea/toner-2?$SQUARE-575x575-2X$",
+        "desc": "Our gentle, alcohol-free Vanilla Milk Toner helps balance your skin and preps for the next moisture step. Formulated with moisturizing Glycerin, Squalane, Apple Extract and Avocado Oil, this skin-perfecting toner helps smooth and improve the appearance of pores.",
+        "name": "VANILLA MILK TONER",
+        "price": "CHF 20"
+      }
+    ], 
+    "mousturizers": [
+      {
+        "id": 1,
+        "img": "https://coty.scene7.com/is/image/cotyemea/face-moisturizer-1?$SQUARE-575x575-2X$",
+        "desc": "Our Face Moisturizer, infused with a blend of humectants and emollients, helps hydrate skin without heaviness, greasiness or oiliness. Formulated with Shea Butter and a blend of Banana, Oat and Orange peel extracts, this indulging formula conditions, smoothes and softens the skin for a-non greasy, soft-to-the-touch finish.",
+        "name": "FACE MOISTURIZERS",
+        "price": "CHF 25"
+      },
+      {
+        "id": 2,
+        "img": "https://coty.scene7.com/is/image/cotyemea/4%20Piece%20Mini?$SQUARE-575x575-2X$",
+        "desc": "The 4-Piece Kylie Skin mini set contains the perfect on-the-go essentials. Set Includes: Foaming Face Wash (1 fl oz / 30 ml), Face Moisturizer (0.5 fl oz / 15 ml), Vitamin C Serum (0.3 fl oz / 10 ml), Vanilla Milk Toner (1 fl oz / 30 ml)",
+        "name": "4-PIECE MINI SET",
+        "price": "CHF 40"
+      },
+      {
+        "id": 3,
+        "img": "https://cdn.shopify.com/s/files/1/0066/8719/5183/products/KS_Valentines-Day-Set_Ecomm-Pink_02_Websized.jpg?v=1629496438",
+        "desc": "Share the love with our new 8 Piece Mini Set, featuring our best-selling Kylie Skin essentials, now available for a limited time in minis! Cleanse, hydrate, and glow from head to toe and on-the-go with these Kylie Skin mini must-haves. Our special-edition mini set is the perfect self-care treat or gift to your loved ones. The 8 Piece Mini Collection Set includes one each of: Mini Vitamin C Serum: 10mL (0.3 FL OZ), Mini Vanilla Milk Toner: 30mL (1 FL OZ), Mini Face Moisturizer: 15mL (0.5 FL OZ), Mini Foaming Face Wash: 30mL (1 FL OZ), Mini Coconut Body Lotion: 30mL (1 FL OZ), Mini Coconut Body Scrub: 30mL (1 FL OZ), Mini Eye Cream: 4mL (0.13 FL OZ), Mini Walnut Face Scrub: 15g (0.5 OZ)",
+        "name": "8 PIECE MINI SET",
+        "price": "CHF 85"
+      },
+      {
+        "id": 4,
+        "img": "https://coty.scene7.com/is/image/cotyemea/kylie_hydrating_face_mask_97867b78-8ef8-4c50-9af3-07e91a349e20?$SQUARE-575x575-2X$",
+        "desc": "Indulge your skin with our Hydrating Face Mask. Formulated with Shea Butter and skin-loving antioxidants, Vitamin B3 and E, this creamy formula helps moisturize, soothe and nourish while improving the look and feel of your skin.",
+        "name": "HYDRATING FACE MASK",
+        "price": "CHF 35"
+      },
+      {
+        "id": 5,
+        "img": "https://coty.scene7.com/is/image/cotyemea/BODY-LOTION-_-BOX-ECOMM-WS?$SQUARE-575x575-2X$",
+        "desc": "Our Coconut Body Lotion feels like a vacation! Formulated with a nourishing blend of Coconut Oil, Shea Butter and Jojoba Seed Oil, this indulging formula helps smooth and moisturize your skin leaving it looking healthy, youthful and feeling satiny soft.",
+        "name": "COCONUT BODY LOTION",
+        "price": "CHF 25"
+      },
+      {
+        "id": 6,
+        "img": "https://coty.scene7.com/is/image/cotyemea/kylie_hydrating_face_mask_97867b78-8ef8-4c50-9af3-07e91a349e20?$SQUARE-575x575-2X$",
+        "desc": "Indulge your skin with our Hydrating Face Mask. Formulated with Shea Butter and skin-loving antioxidants, Vitamin B3 and E, this creamy formula helps moisturize, soothe and nourish while improving the look and feel of your skin.",
+        "name": "HYDRATING FACE MASK",
+        "price": "CHF 35"
+      },
+      {
+        "id": 7,
+        "img": "https://coty.scene7.com/is/image/cotyemea/KS_Hand-Cream_Ecomm-Pink_WS_01?$SQUARE-575x575-2X$",
+        "desc": "Our delightful Hand Cream is your dry hands savior. Formulated with moisturizing Shea Butter and a blend of nourishing botanical Oils, this non-greasy, creamy formula indulges hands with deep moisture and guards from dryness. Your hands feel soft, cared for and silky-smooth.",
+        "name": "HAND CREAM",
+        "price": "CHF 15"
+      },
+      {
+        "id": 8,
+        "img": "https://coty.scene7.com/is/image/cotyemea/toner-2?$SQUARE-575x575-2X$",
+        "desc": "Our gentle, alcohol-free Vanilla Milk Toner helps balance your skin and preps for the next moisture step. Formulated with moisturizing Glycerin, Squalane, Apple Extract and Avocado Oil, this skin-perfecting toner helps smooth and improve the appearance of pores.",
+        "name": "VANILLA MILK TONER",
+        "price": "CHF 25"
+      },
+      {
+        "id": 9,
+        "img": "https://coty.scene7.com/is/image/cotyemea/kylie_hydrating_face_mask_97867b78-8ef8-4c50-9af3-07e91a349e20?$SQUARE-575x575-2X$",
+        "desc": "Indulge your skin with our Hydrating Face Mask. Formulated with Shea Butter and skin-loving antioxidants, Vitamin B3 and E, this creamy formula helps moisturize, soothe and nourish while improving the look and feel of your skin.",
+        "name": "HYDRATING FACE MASK",
+        "price": "CHF"
+      }
+      ],
+      "serums": [
+        {
+          "id": 1,
+          "img": "https://coty.scene7.com/is/image/cotyemea/serum?$SQUARE-575x575-2X$",
+          "desc": "My Vitamin C Serum moisturizes, helps improve texture, and brightens skins overall complexion. Packed with skin-loving ingredients, this rich, non-greasy formula leaves the skin with a fresh, radiant glow.",
+          "name": "VITAMIN C SERUM",
+          "price": "CHF 30"
+        },
+        {
+          "id": 2,
+          "img": "https://coty.scene7.com/is/image/cotyemea/kylie-skin__ccc-stick?$SQUARE-575x575-2X$",
+          "desc": "Our mess-free Clear Complexion Correction Stick is the secret weapon against unwanted surprises. Formulated with Salicylic and Glycolic Acids, our non-stripping gel serum solution gently exfoliates targeted areas. Ideal for combination to oily skin, it also contains Witch Hazel to help protect and improve skin tone and texture for a clear and bright complexion.",
+          "name": "CLEAR COMPLEXION CORRECTION STICK",
+          "price": "CHF 15"
+        },
+        {
+          "id": 3,
+          "img": "https://cdn.shopify.com/s/files/1/0066/8719/5183/products/Serum_20Bundle.jpg?v=1627912445",
+          "desc": "The perfect duo. Vitamin C and Hyaluronic Acid are two powerhouse skin care ingredients. Combining HA and Vitamin C allows you to receive the benefits of each. Vitamin C has brightening skin effects while HA’s strength is helping the skin retain moisture.",
+          "name": "SERUM BUNDLE",
+          "price": "CHF 56"
+        },
+        {
+          "id": 4,
+          "img": "https://coty.scene7.com/is/image/cotyemea/HA-Serum-Kylie-SKin-Web?$SQUARE-575x575-2X$",
+          "desc": "Our hyaluronic acid serum is a potent, lightweight, multi-functional formula that delivers hydration throughout the day to improve the look and feel of your skin. It is formulated with vitamins, antioxidants and 4 layers of Hyaluronic Acid to moisturize and help improve the appearance of the skin.",
+          "name": "HYALURONIC ACID SERUM",
+          "price": "CHF 30"
+        },
+        {
+          "id": 5,
+          "img": "https://coty.scene7.com/is/image/cotyemea/kylie-skin_facial-oil?$SQUARE-575x575-2X$",
+          "desc": "Our ultra-lightweight Clarifying Facial Oil helps balance skin and reveals your healthy-looking glow. Formulated with an expert oil blend and skin-perfecting Salicylic Acid, this oil texture leaves a non-greasy after-feel, replenishes moisture and helps reduce excess oil on the skin surface. Ideal for combination to oily skin to clarify and improve overall skin texture and tone day after day.",
+          "name": "CLARIFYING FACIAL OIL",
+          "price": "CHF 25"
+        },
+        {
+          "id": 6,
+          "img": "https://coty.scene7.com/is/image/cotyemea/4064941000464_KS_FRIDGE_21_Closed_Pink_Background_Square-1?$SQUARE-575x575-2X$",
+          "desc": "Our Kylie Skin Mini Fridge is the ultimate beauty accessory, designed specifically for storing your favorite skincare products. It keeps your creams, serums and masks fresher for longer.",
+          "name": "KYLIE SKIN MINI FRIDGE",
+          "price": "CHF 25"
+        }
+      ],
+    "comments": [
+      {
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+      }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
