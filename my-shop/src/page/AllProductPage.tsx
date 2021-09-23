@@ -3,23 +3,16 @@ import "../App.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import CustomCard from "../components/card";
 import { AllPageContent, Product } from "../components/Types";
+import ProductService from "./ProductService"
+import getData from "./ProductService";
+
 
 
 function AllProductPage({url, img, title, type} : AllPageContent) {
 
-  const [products, setProduct] = useState<Product[]>([]);
-  useEffect(() => {
-    fetch(url)
-      .then((resolve) => {
-        return resolve.json();
-      })
-      .then((product) => {
-        setProduct(product);
-      })
-      .catch(() => {
-        console.log("unexpected error");
-      });
-  }, [url]);
+  const [products, setProduct] = useState([]);
+
+getData("mousturizers").then((response) => response.data).then((myData) => setProduct(myData));
 
   return (
     <>
