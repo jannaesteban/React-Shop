@@ -1,25 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../App.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import CustomCard from "../components/card";
 import { AllPageContent, Product } from "../components/Types";
+import ProductService from "./ProductService"
+
 
 
 function AllProductPage({url, img, title, type} : AllPageContent) {
 
-  const [products, setProduct] = useState<Product[]>([]);
-  useEffect(() => {
-    fetch(url)
-      .then((resolve) => {
-        return resolve.json();
-      })
-      .then((product) => {
-        setProduct(product);
-      })
-      .catch(() => {
-        console.log("unexpected error");
-      });
-  }, [url]);
+  const [products, setProduct] = useState([]);
+
+  const productService = new ProductService();
+                                                                                                                                                                          
+productService.getAllData(type).then((response) => response.data).then((myData) => setProduct(myData));
 
   return (
     <>

@@ -1,24 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useParams } from "react-router";
 import { Product } from "../components/Types";
+import ProductService from "./ProductService";
 
 const SingleProduct = function SingleProduct() {
   const { itemType, id } = useParams<{ itemType: string, id: string }>();
   const [product, setProduct] = useState<Product>({} as Product);
 
-  useEffect(() => {
-    fetch("http://localhost:3001/"+itemType+"/"+id)
-      .then((resolve) => {
-        return resolve.json();
-      })
-      .then((data) => {
-        setProduct(data);
-      })
-      .catch(() => {
-        console.log("unexpected error");
-      });
-  }, [itemType, id]);
+   const productService = new ProductService();
+                                                                                                                                                                          
+productService.getAllData(itemType+ "/" + id).then((response) => response.data).then((myData) => setProduct(myData));
+
 
   return (
     <Container>
