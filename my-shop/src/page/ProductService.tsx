@@ -1,11 +1,21 @@
 import axios from "axios";
 
-export default function getData(url :string){
+class ProductService{
 
-    const service = axios.create({
-        baseURL: "http://localhost:3001"
+    private service = axios.create({
+        baseURL: "http://localhost:3001/"
     });
 
-    return service.get("http://localhost:3001/" + url);
+    getAllData(url :string){
+        return this.service.get(url);
+    }
+
+    getSingleData(url :string, id :string){
+        return this.service.get(url + id);
+    }
+
+
 }
+ 
+export default ProductService;
 

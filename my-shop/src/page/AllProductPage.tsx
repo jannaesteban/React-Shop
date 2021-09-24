@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../App.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import CustomCard from "../components/card";
 import { AllPageContent, Product } from "../components/Types";
 import ProductService from "./ProductService"
-import getData from "./ProductService";
 
 
 
@@ -12,7 +11,9 @@ function AllProductPage({url, img, title, type} : AllPageContent) {
 
   const [products, setProduct] = useState([]);
 
-getData("mousturizers").then((response) => response.data).then((myData) => setProduct(myData));
+  const productService = new ProductService();
+                                                                                                                                                                          
+productService.getAllData(type).then((response) => response.data).then((myData) => setProduct(myData));
 
   return (
     <>
