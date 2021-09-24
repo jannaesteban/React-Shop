@@ -4,7 +4,8 @@ import { Button } from "react-bootstrap";
 import { Product } from "./Types";
 
 
-const CustomCard = ({ id, img, desc, name, price, itemType}: Product) => {
+const 
+CustomCard = ({ id, img, desc, name, price, itemType}: Product) => {
   return (
     <>
       <Card style={{ width: "25rem" }} className="otherCard">

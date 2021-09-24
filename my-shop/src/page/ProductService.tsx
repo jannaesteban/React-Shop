@@ -14,7 +14,6 @@ class ProductService{
         return this.service.get(url + id);
     }
 
-
 }
  
 export default ProductService;
