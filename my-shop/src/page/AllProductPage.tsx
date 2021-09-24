@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+
+import React, { useEffect, useState } from "react";
 import "../App.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import CustomCard from "../components/card";
@@ -10,10 +11,15 @@ import ProductService from "./ProductService"
 function AllProductPage({url, img, title, type} : AllPageContent) {
 
   const [products, setProduct] = useState([]);
+  
 
   const productService = new ProductService();
-                                                                                                                                                                          
-productService.getAllData(type).then((response) => response.data).then((myData) => setProduct(myData));
+                                
+  useEffect(() => {
+    productService.getAllData(type).then((response) => response.data).then((myData) => setProduct(myData),);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
 
   return (
     <>
