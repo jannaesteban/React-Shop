@@ -11,12 +11,8 @@ const SingleProduct = function SingleProduct() {
   const productService = new ProductService();
 
   useEffect(() => {
-    productService
-      .getAllData(itemType + "/" + id)
-      .then((response) => response.data)
-      .then((myData) => setProduct(myData))
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [itemType, id]);
+    productService.getSingleProduct(id).then((resolve) => setProduct(resolve.data));
+}, [id]);
   return (
     <Container>
       <Row>

@@ -14,10 +14,10 @@ function AllProductPage({url, img, title, type} : AllPageContent) {
   
 
   const productService = new ProductService();
-                                
+  
   useEffect(() => {
-    productService.getAllData(type).then((response) => response.data).then((myData) => setProduct(myData),);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    productService.getAllProducts().then((resolve) => setProduct(resolve.data));
+
   }, []);
 
 
@@ -37,9 +37,11 @@ function AllProductPage({url, img, title, type} : AllPageContent) {
       <body>
         <Container>
           <Row>
-            {products.map((value: Product) => {
+            {products.filter((product: Product)=>{
+              return(product.itemType.includes(type));
+            }).map((value: Product) => {
               return (
-                <Col md={4}>
+                  <Col md={4}>
                   <CustomCard
                     id={value.id}
                     img={value.img}
