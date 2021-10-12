@@ -12,7 +12,7 @@ public class Product {
     private String description;
     private String name;
     private String price;
-    private String categorie;
+    private String category;
 
 
     public Product(String img, String description, String name, String price, String categorie) {
@@ -20,12 +20,14 @@ public class Product {
         this.description = description;
         this.name = name;
         this.price = price;
-        this.categorie = categorie;
+        this.category = categorie;
     }
 
     public Product() {
 
     }
+
+
 
     public String getImg() {
         return img;
@@ -59,15 +61,19 @@ public class Product {
         this.price = price;
     }
 
-    public String getCategorie() {
-        return categorie;
+    public String getCategory() {
+        return category;
     }
 
-    public void setCategorie(String categorie) {
-        this.categorie = categorie;
+    public void setCategory(String categorie) {
+        this.category = categorie;
     }
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getId() {
+        return id;
     }
 }

@@ -1,15 +1,19 @@
 export type Product = {
     id: number;
     img: string;
-    desc: string;
+    description?: string;
     name: string;
     price: string;
-    itemType: string;
+    category: string;
   };
 
   export type AllPageContent = {
-    url: string;
     img: string;
     title: string;
     type: string;
+  }
+
+  export type SearchContextState ={
+    searchName : string;
+    addSearch : (name : string) =>void;
   }

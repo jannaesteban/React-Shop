@@ -5,7 +5,7 @@ import { Product } from "./Types";
 
 
 const 
-CustomCard = ({ id, img, desc, name, price, itemType}: Product) => {
+CustomCard = ({ id, img, name, price, category}: Product) => {
   return (
     <>
       <Card style={{ width: "25rem" }} className="otherCard">
@@ -18,7 +18,7 @@ CustomCard = ({ id, img, desc, name, price, itemType}: Product) => {
           <Card.Text>
            {price}
           </Card.Text>
-          <Button variant="primary" href={"http://localhost:3000/"+itemType+"/" + id}>
+          <Button variant="primary" href={"http://localhost:3000/"+category+"/" + id}>
             GET DETAILS
           </Button>
         </Card.Body>

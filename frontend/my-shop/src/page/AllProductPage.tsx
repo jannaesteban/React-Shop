@@ -1,23 +1,24 @@
 
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../App.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import CustomCard from "../components/card";
 import { AllPageContent, Product } from "../components/Types";
-import ProductService from "./ProductService"
+import ProductService from "./ProductService";
+import { SearchContext } from "../components/SearchContext";
 
 
 
-function AllProductPage({url, img, title, type} : AllPageContent) {
+function AllProductPage({img, title, type} : AllPageContent) {
 
-  const [products, setProduct] = useState([]);
+  const [products, setProduct] = useState <Product[]>([]);
+  
+  const {searchName} = useContext(SearchContext);
   
 
-  const productService = new ProductService();
-  
   useEffect(() => {
-    productService.getAllProducts().then((resolve) => setProduct(resolve.data));
-
+    const productService = new ProductService();
+    productService.getAllProducts().then((resolve) => {setProduct(resolve.data); console.log(resolve.data)});
   }, []);
 
 
@@ -37,18 +38,20 @@ function AllProductPage({url, img, title, type} : AllPageContent) {
       <body>
         <Container>
           <Row>
-            {products.filter((product: Product)=>{
-              return(product.itemType.includes(type));
+            {console.log(searchName)}
+            {products && products.filter((product : Product) => product.category.includes(type)).filter((product : Product) => {
+              return(
+                product.name.toLowerCase().includes(searchName) || !searchName
+              );
             }).map((value: Product) => {
               return (
                   <Col md={4}>
                   <CustomCard
                     id={value.id}
                     img={value.img}
-                    desc={value.desc}
                     name={value.name}
                     price={value.price}
-                    itemType={type}
+                    category={type}
                   />
                 </Col>
               );

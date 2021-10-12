@@ -39,7 +39,7 @@ public class ProductService {
             product.setDescription(newProduct.getDescription());
             product.setName(newProduct.getName());
             product.setPrice(newProduct.getPrice());
-            product.setCategorie(newProduct.getCategorie());
+            product.setCategory(newProduct.getCategory());
             return productRepository.save(product);
         }).orElseGet(() ->{
             newProduct.setId(id);

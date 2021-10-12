@@ -3,31 +3,16 @@ import "../App.css";
 //import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Caroussel from "../components/Caroussel";
-import HomeCard from "../components/HomeCard";
+import ProductService from "./ProductService";
+import CustomCard from "../components/card";
+import { AllPageContent, Product } from "../components/Types";
 
 function Home() {
-  type Product = {
-    img: string;
-    desc: string;
-    name: string;
-    link: string;
-  };
-
   const [products, setProduct] = useState<Product[]>([]);
-useEffect(() => {
-  fetch("http://localhost:3001/home")
-    .then((resolve) => {
-      return resolve.json();
-    })
-    .then((product) => {
-      console.log(product)
-      setProduct(product);
-    })
-    .catch(() => {
-      console.log("unexpected error");
-    });
-}, [])
-
+  useEffect(() => {
+    const productService = new ProductService();
+    productService.getAllProducts().then((resolve) => setProduct(resolve.data))
+  }, []);
 return (
       <body>
         <Caroussel />
@@ -41,12 +26,13 @@ return (
           <Row>
             {products.map((value: Product) => {
               return (
-                <Col md={3}>
-                  <HomeCard
+                <Col md={4}>
+                  <CustomCard
+                    id={value.id}
                     img={value.img}
-                    desc={value.desc}
                     name={value.name}
-                    link={value.link}
+                    price={value.price}
+                    category={value.category}
                   />
                 </Col>
               );
