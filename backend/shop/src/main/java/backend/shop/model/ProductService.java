@@ -1,6 +1,9 @@
 package backend.shop.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -30,7 +33,7 @@ public class ProductService {
     }
 
     public Product addProduct(Product newProduct) {
-        return productRepository.save(newProduct);
+            return productRepository.save(newProduct);
     }
 
     public Product updateProductById( Product newProduct, Long id) {
@@ -47,7 +50,12 @@ public class ProductService {
         });
     }
 
-    public void deleteProductById(Long id) {
-       productRepository.deleteById(id);
+    public ResponseEntity<String> deleteProductById(Long id) {
+        try{
+            productRepository.deleteById(id);
+            return new ResponseEntity<>("Product with id{"+id+"} was succesfully deleted", HttpStatus.OK);
+        }catch(EmptyResultDataAccessException e){
+            return new ResponseEntity("Id not found",HttpStatus.NOT_FOUND);
+        }
     }
 }

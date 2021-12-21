@@ -1,12 +1,15 @@
 package backend.shop.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin
+
+@CrossOrigin("http://localhost:3000")
 @RestController
 @RequestMapping("/products")
 public class ProductController {
@@ -48,8 +51,9 @@ public class ProductController {
 
     //delete a single item
     @DeleteMapping("/{id}")
-    void deleteProduct(@PathVariable Long id){
-        productService.deleteProductById(id);
+    public ResponseEntity<String> deleteProduct(@PathVariable Long id){
+           return productService.deleteProductById(id);
+
     }
 
 
